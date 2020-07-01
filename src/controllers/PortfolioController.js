@@ -12,8 +12,8 @@ class PortfolioController {
 
   ifItemNotExist = (item, action) => {
     PortfolioModel.find({ projectName: item.projectName }, (error, result) => {
-      if (error || !result || result === []) {
-        action();
+      if (error || !result || result.length === 0) {
+        return action();
       }
     });
   };
