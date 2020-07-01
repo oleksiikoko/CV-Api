@@ -1,14 +1,27 @@
 const PortfolioModel = require("../models/PortfolioModel");
 
 class PortfolioController {
-  getPortfolio = (req, res) => {
+  getPortfolio = (_, res) => {
     PortfolioModel.find({}, (error, portfolioItems) => {
       if (error || !portfolioItems) {
-        res.status(404).json({ message: "Portfolio items not found" });
+        return res.status(404).json({ message: "Portfolio items not found" });
       }
-      res.status(200).json(portfolioItems);
+      return res.status(200).json(portfolioItems);
     });
+  };
+
+  ifItemNotExist = (item, action) => {
+    PortfolioModel.find({ projectName: item.projectName }, (error, result) => {
+      if (error || !result || result === []) {
+        action();
+      }
+    });
+  };
+
+  addPortfolioItem = (item) => {
+    const newItem = PortfolioModel(item);
+    newItem.save();
   };
 }
 
-exports.PortfolioController = PortfolioController;
+module.exports = PortfolioController;

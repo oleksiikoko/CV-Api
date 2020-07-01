@@ -1,14 +1,13 @@
 const bodyParser = require("body-parser");
 
-const PortfolioController = require("../controllers/PortfolioController.js")
-  .PortfolioController;
+const PortfolioController = require("../controllers/PortfolioController.js");
 
 const createRoutes = (app) => {
-  const PortfolioCtrl = new PortfolioController();
+  const portfolioController = new PortfolioController();
 
   app.use(bodyParser.json());
 
-  app.get("/portfolio", PortfolioCtrl.getPortfolio);
+  app.get("/portfolio", portfolioController.getPortfolio);
 };
 
 module.exports = createRoutes;

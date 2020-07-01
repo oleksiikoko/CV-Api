@@ -1,0 +1,112 @@
+{
+  "portfolio": [
+    {
+      "projectName": "CV",
+      "description": "<p>В даному проекті я намагався застосувати всі свої здобуті знання та навички створення фронтенд застосунків. Намагався писати код по СОЛІД методології, та зробити код максимально зрозумілим і готовим до наступних модифікацій. Також написана документація АПІ серверу, яку ви можете знайти в правому нижньому куту. Та головною задумкою є продемонствувати майбутньому роботодавцю мою компетентність, креативність, самостійність та готовність до отримання нового досвіду, а також надати як умога більше інформації про себе.<>",
+      "links": [
+        {
+          "iconId": "figma",
+          "name": "Maket",
+          "url": "https://www.figma.com/file/RDlQxmX94XD7TZvDuRsB4j/CV?node-id=0%3A1",
+          "color": "figma"
+        },
+        {
+          "iconId": "gitHub",
+          "name": "Code",
+          "url": "https://github.com/oleksiikoko/CV",
+          "color": "blue"
+        },
+        {
+          "iconId": "heroku",
+          "name": "Deploy",
+          "url": "http://localhost:3000/",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "projectName": "Joke generator",
+      "description": "<p>Особливістю даного проекту є те, що він написаний без застосування фреймворків, продемостровано розуміння того, як працює Vanilla.js. А також розуміння того як будується адаптивний дизайн. Зібраний за допомогою ВебПак.</p> ",
+      "links": [
+        {
+          "iconId": "figma",
+          "name": "Maket",
+          "url": "https://www.figma.com/file/tXQ7qBjtlVZgaleoU4Yiqm/MSI-2020---Front-end-Development-Test?node-id=0%3A1",
+          "color": "figma"
+        },
+        {
+          "iconId": "gitHub",
+          "name": "Code",
+          "url": "https://github.com/oleksiikoko/Joke-Generator",
+          "color": "blue"
+        },
+        {
+          "iconId": "heroku",
+          "name": "Deploy",
+          "url": "https://mac-paw-internship.herokuapp.com/",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "projectName": "GitHub search",
+      "description": "<p>Пошукова сторінка гітхаб, створена з Дизайну гіт, апі гіт. Знайомство з SSR.</p>",
+      "links": [
+        {
+          "iconId": "gitHub",
+          "name": "Code",
+          "url": "https://github.com/oleksiikoko/GitHub-Search",
+          "color": "blue"
+        },
+        {
+          "iconId": "heroku",
+          "name": "Deploy",
+          "url": "https://better-me-test.herokuapp.com/",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "projectName": "User statistics",
+      "description": "<p>В проекту є 3 основі стани, лендінг, таблиця з даними юзерів, та грфіки для демонстрації активності.</p>",
+      "links": [
+        {
+          "iconId": "figma",
+          "name": "Maket",
+          "url": "https://www.figma.com/file/LpWuCx7YkPctSdSVwAKflI/Untitled",
+          "color": "figma"
+        },
+        {
+          "iconId": "gitHub",
+          "name": "Code",
+          "url": "https://github.com/oleksiikoko/User-Statistics",
+          "color": "blue"
+        }
+      ]
+    },
+    {
+      "projectName": "TicTacToe",
+      "description": "<p>Гра хрестики-нулики як з живим противником так і ботом. Суть даного проету, є застосування набути навичок в React/Redux/Node.js. Проблеми: відсутня адаптивна верстка, важкий для розуміння код. Заплутана логіка.</p>",
+      "links": [
+        {
+          "iconId": "figma",
+          "name": "Maket",
+          "url": "https://www.figma.com/file/EBFJ5hHfV4CnJridemzPcU/TicTacToe",
+          "color": "figma"
+        },
+        {
+          "iconId": "gitHub",
+          "name": "Code",
+          "url": "https://github.com/oleksiikoko/TicTacToe",
+          "color": "blue"
+        },
+        {
+          "iconId": "heroku",
+          "name": "Deploy",
+          "url": "https://pet-tictactoe.herokuapp.com/",
+          "color": "purple"
+        }
+      ]
+    }
+  ]
+}
