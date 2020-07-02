@@ -1,13 +1,19 @@
 const PortfolioModel = require("../models/PortfolioModel");
+const fs = require("fs");
+const path = require("path");
+
+// import { gifPreview } from "assets/img/PortfolioGifPreview/GitHubSearchPreview.gif";
 
 class PortfolioController {
   getPortfolio = (_, res) => {
-    PortfolioModel.find({}, (error, portfolioItems) => {
-      if (error || !portfolioItems) {
-        return res.status(404).json({ message: "Portfolio items not found" });
-      }
-      return res.status(200).json(portfolioItems);
-    });
+    PortfolioModel.find({})
+      .sort("-date")
+      .exec((error, portfolioItems) => {
+        if (error || !portfolioItems) {
+          return res.status(404).json({ message: "Portfolio items not found" });
+        }
+        return res.status(200).json(portfolioItems);
+      });
   };
 
   ifItemNotExist = (item, action) => {
@@ -19,7 +25,22 @@ class PortfolioController {
   };
 
   addPortfolioItem = (item) => {
-    const newItem = PortfolioModel(item);
+    let newItem;
+    if (item.gifPreviewPath) {
+      newItem = PortfolioModel({
+        projectName: item.projectName,
+        description: item.description,
+        gifPreview: {
+          data: fs.readFileSync(
+            path.resolve(process.cwd(), item.gifPreviewPath)
+          ),
+          contentType: "image/gif",
+        },
+        links: item.links,
+      });
+    } else {
+      newItem = PortfolioModel(item);
+    }
     newItem.save();
   };
 }
