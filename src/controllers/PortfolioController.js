@@ -2,8 +2,6 @@ const PortfolioModel = require("../models/PortfolioModel");
 const fs = require("fs");
 const path = require("path");
 
-// import { gifPreview } from "assets/img/PortfolioGifPreview/GitHubSearchPreview.gif";
-
 class PortfolioController {
   getPortfolio = (_, res) => {
     PortfolioModel.find({})
