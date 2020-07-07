@@ -5,6 +5,7 @@ const EnglishController = require("../controllers/EnglishController");
 const ExperienceController = require("../controllers/ExperienceController");
 const MotivationController = require("../controllers/MotivationController");
 const SkillController = require("../controllers/SkillController");
+const EducationController = require("../controllers/EducationController");
 
 class DBFiller {
   constructor(dbJson) {
@@ -15,6 +16,7 @@ class DBFiller {
     this.experienceController = new ExperienceController();
     this.motivationController = new MotivationController();
     this.skillController = new SkillController();
+    this.educationController = new EducationController();
     this.dbJson = dbJson;
   }
 
@@ -26,6 +28,7 @@ class DBFiller {
     this.fillExperience(this.dbJson.experience);
     this.fillMotivation(this.dbJson.motivation);
     this.fillSkills(this.dbJson.skills);
+    this.fillEducation(this.dbJson.education);
   };
 
   fillPortfolio = (portfolioItems) => {
@@ -79,6 +82,14 @@ class DBFiller {
     skills.map((item) => {
       this.skillController.ifItemNotExist(item, () => {
         this.skillController.addSkill(item);
+      });
+    });
+  };
+
+  fillEducation = (education) => {
+    education.map((item) => {
+      this.educationController.ifItemNotExist(item, () => {
+        this.educationController.addEducation(item);
       });
     });
   };
