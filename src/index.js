@@ -1,4 +1,6 @@
 const express = require("express");
+var favicon = require("serve-favicon");
+var path = require("path");
 const dotenv = require("dotenv");
 const createServer = require("http").createServer;
 
@@ -21,6 +23,8 @@ const dbFiller = new DBFiller(dbJson);
 dbFiller.run();
 
 const app = express();
+
+app.use(favicon(path.join(__dirname, "assets", "favicon.ico")));
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
