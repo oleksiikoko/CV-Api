@@ -9,6 +9,9 @@ const PortfolioSchema = new Schema(
     gifPreview: {
       data: Buffer,
       contentType: String,
+      width: Number,
+      height: Number,
+      duration: Number,
     },
     links: [
       {

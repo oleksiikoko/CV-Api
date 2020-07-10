@@ -3,7 +3,6 @@
     {
       "projectName": "CV",
       "description": "<p>Основні вимоги до даного прокту:</p><ul><li>Чистий код</li><li>Зрозуміла архітектура</li><li>Прості модулі які можна багаторазово використовувати</li><li>Зручний інтерфейс</li></ul><p>Головною ідеєю є демонстрація моєї <b>компетентність</b>, <b>креативність</b>, <b>самостійністі та готовності до отримання нового досвіду</b>.</p>",
-
       "links": [
         {
           "iconId": "figma",
@@ -28,7 +27,12 @@
     {
       "projectName": "Joke generator",
       "description": "<p>Особливістю даного проекту є те, що він написаний без застосування фреймворків, продемостровано розуміння того, як працює Vanilla.js. А також розуміння того як будується адаптивний дизайн. Зібраний за допомогою ВебПак.</p> ",
-      "gifPreviewPath": "src/assets/PortfolioGifPreview/JokeGeneratorPreview.gif",
+      "gif": {
+        "path": "src/assets/PortfolioGifPreview/JokeGeneratorPreview.gif",
+        "duration": 12000,
+        "width": 800,
+        "height": 395
+      },
       "links": [
         {
           "iconId": "figma",
@@ -53,7 +57,12 @@
     {
       "projectName": "GitHub search",
       "description": "<p>Пошукова сторінка гітхаб, створена з Дизайну гіт, апі гіт. Знайомство з SSR.</p>",
-      "gifPreviewPath": "src/assets/PortfolioGifPreview/GitHubSearchPreview.gif",
+      "gif": {
+        "path": "src/assets/PortfolioGifPreview/GitHubSearchPreview.gif",
+        "duration": 4000,
+        "width": 600,
+        "height": 552
+      },
       "links": [
         {
           "iconId": "gitHub",
@@ -72,7 +81,12 @@
     {
       "projectName": "User statistics",
       "description": "<p>В проекту є 3 основі стани, лендінг, таблиця з даними юзерів, та грфіки для демонстрації активності.</p>",
-      "gifPreviewPath": "src/assets/PortfolioGifPreview/UserStatisticPreview.gif",
+      "gif": {
+        "path": "src/assets/PortfolioGifPreview/UserStatisticPreview.gif",
+        "duration": 7000,
+        "width": 800,
+        "height": 393
+      },
       "links": [
         {
           "iconId": "figma",
@@ -91,7 +105,12 @@
     {
       "projectName": "TicTacToe",
       "description": "<p>Гра хрестики-нулики як з живим противником так і ботом. Суть даного проету, є застосування набути навичок в React/Redux/Node.js. Проблеми: відсутня адаптивна верстка, важкий для розуміння код. Заплутана логіка.</p>",
-      "gifPreviewPath": "src/assets/PortfolioGifPreview/TicTacToePreview.gif",
+      "gif": {
+        "path": "src/assets/PortfolioGifPreview/TicTacToePreview.gif",
+        "duration": 10000,
+        "width": 800,
+        "height": 393
+      },
       "links": [
         {
           "iconId": "figma",
@@ -142,7 +161,10 @@
       "contact": "linkedin.com/in/oleksiiko",
       "href": "https://www.linkedin.com/in/oleksiiko/"
     },
-    { "iconId": "skype", "contact": "live:oleksiij.ko" }
+    {
+      "iconId": "skype",
+      "contact": "live:oleksiij.ko"
+    }
   ],
   "english": {
     "level": "Pre-Intermediate(confident read, write, and support documentation)"
@@ -155,22 +177,38 @@
       "startDate": "2019-01-01",
       "endDate": "2019-12-01",
       "tasks": [
-        { "task": "Decentralized application development" },
-        { "task": "Multithreaded code execution" },
-        { "task": "Finding and preventing memory leaks" },
-        { "task": "Blockchain network support" }
+        {
+          "task": "Decentralized application development"
+        },
+        {
+          "task": "Multithreaded code execution"
+        },
+        {
+          "task": "Finding and preventing memory leaks"
+        },
+        {
+          "task": "Blockchain network support"
+        }
       ]
     }
   ],
   "motivation": [
-    { "text": "Ukrainian motivation", "language": "ua" },
-    { "text": "En motivation", "language": "en" }
+    {
+      "text": "Ukrainian motivation",
+      "language": "ua"
+    },
+    {
+      "text": "En motivation",
+      "language": "en"
+    }
   ],
   "skills": [
     {
       "text": "Understanding JavaScript strengths and weaknesses, <b>es5</b> and <b>es6</b> Standards"
     },
-    { "text": "Manipulating a DOM model" },
+    {
+      "text": "Manipulating a DOM model"
+    },
     {
       "text": "Markup of adaptive, flexbox HTML pages using SCSS preprocessor following the BEM methodology"
     },
@@ -183,9 +221,15 @@
     {
       "text": "Writing clean, reusable, mutable code using OOP/OOD principles"
     },
-    { "text": "Networking protocols: TCP/IP, HTTP" },
-    { "text": "Linux" },
-    { "text": "Git" }
+    {
+      "text": "Networking protocols: TCP/IP, HTTP"
+    },
+    {
+      "text": "Linux"
+    },
+    {
+      "text": "Git"
+    }
   ],
   "education": [
     {

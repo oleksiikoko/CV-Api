@@ -1,11 +1,13 @@
+require("babel-polyfill");
 const PortfolioModel = require("../models/PortfolioModel");
 const fs = require("fs");
 const path = require("path");
+const gifDurations = require("gif-me-duration");
 
 class PortfolioController {
   getPortfolio = (_, res) => {
     PortfolioModel.find({})
-      .sort("-date")
+      .sort("created_at")
       .exec((error, portfolioItems) => {
         if (error || !portfolioItems) {
           return res.status(404).json({ message: "Portfolio items not found" });
@@ -22,17 +24,18 @@ class PortfolioController {
     });
   };
 
-  addPortfolioItem = (item) => {
+  addPortfolioItem = async (item) => {
     let newItem;
-    if (item.gifPreviewPath) {
+    if (item.gif) {
       newItem = PortfolioModel({
         projectName: item.projectName,
         description: item.description,
         gifPreview: {
-          data: fs.readFileSync(
-            path.resolve(process.cwd(), item.gifPreviewPath)
-          ),
+          data: fs.readFileSync(path.resolve(process.cwd(), item.gif.path)),
           contentType: "image/gif",
+          width: item.gif.width,
+          height: item.gif.height,
+          duration: item.gif.duration,
         },
         links: item.links,
       });
