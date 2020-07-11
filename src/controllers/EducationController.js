@@ -2,12 +2,14 @@ const EducationModel = require("../models/EducationModel");
 
 class EducationController {
   getEducation = (_, res) => {
-    EducationModel.find({}).exec((error, educationItem) => {
-      if (error || !educationItem) {
-        return res.status(404).json({ message: "Education not found" });
-      }
-      return res.status(200).json(educationItem);
-    });
+    EducationModel.find({})
+      .sort("created_at")
+      .exec((error, educationItem) => {
+        if (error || !educationItem) {
+          return res.status(404).json({ message: "Education not found" });
+        }
+        return res.status(200).json(educationItem);
+      });
   };
 
   addEducation = (item) => {

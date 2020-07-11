@@ -3,7 +3,7 @@ const ExperienceModel = require("../models/ExperienceModel");
 class ExperienceController {
   getExperience = (_, res) => {
     ExperienceModel.find({})
-      .sort("-date")
+      .sort("created_at")
       .exec((error, experienceItems) => {
         if (error || !experienceItems) {
           return res
