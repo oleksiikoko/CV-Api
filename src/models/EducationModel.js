@@ -5,6 +5,7 @@ const Schema = mongoose.Schema;
 const EducationSchema = new Schema(
   {
     text: String,
+    description: String,
   },
   { timestamps: { createdAt: "created_at" } }
 );
