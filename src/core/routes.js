@@ -37,10 +37,11 @@ const createRoutes = (app) => {
     res.download(file);
   });
 
-  app.get("/send-to-mail", function (req, res) {
+  app.post("/send-to-mail", function (req, res) {
+    console.log(req);
     const message = {
       from: "olkov-ipt21@lll.kpi.ua",
-      to: "oleksiij.ko@gmail.com",
+      to: req.body.recipient,
       subject: "Design Your Model S | Tesla",
       html:
         "<h1>Have the most fun you can in a car!</h1><p>Get your <b>Tesla</b> today!</p>",
