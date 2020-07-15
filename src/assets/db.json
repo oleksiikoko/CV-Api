@@ -167,7 +167,7 @@
     }
   ],
   "english": {
-    "level": "Pre-Intermediate(confident read, write, and support documentation)"
+    "level": "Pre-Intermediate"
   },
   "experience": [
     {
@@ -195,11 +195,11 @@
   "motivation": [
     {
       "text": "Ukrainian motivation",
-      "language": "ua"
+      "language": "Ukrainian"
     },
     {
       "text": "En motivation",
-      "language": "en"
+      "language": "English"
     }
   ],
   "skills": [
@@ -237,7 +237,7 @@
       "description": "Was engaged in an intensive boot camp of C language course where everyone learns himself to work with strict deadlines and self-planning. Basics of networking. Introduction to Unix"
     },
     {
-      "text": "National Technical University of Ukraine \"Igor Sikorsky Kyiv Polytechnic Institute\"",
+      "text": "NTUU \"Igor Sikorsky Kyiv Polytechnic Institute\"",
       "description": "Applied mathematics<i>(rejected)</i>"
     }
   ]

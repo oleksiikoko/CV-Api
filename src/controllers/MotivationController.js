@@ -2,12 +2,14 @@ const MotivationModel = require("../models/MotivationModel");
 
 class MotivationController {
   getMotivation = (_, res) => {
-    MotivationModel.find({}).exec((error, result) => {
-      if (error || !result) {
-        return res.status(404).json({ message: "Motivation not found" });
-      }
-      return res.status(200).json(result);
-    });
+    MotivationModel.find({})
+      .sort("created_at")
+      .exec((error, result) => {
+        if (error || !result) {
+          return res.status(404).json({ message: "Motivation not found" });
+        }
+        return res.status(200).json(result);
+      });
   };
 
   ifItemNotExist = (item, action) => {
