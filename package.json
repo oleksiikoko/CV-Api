@@ -1,8 +1,11 @@
 {
+  "homepage": "http://oleksiikoko.github.io/CV-Api/",
   "name": "CV-Api",
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
+    "predeploy": "yarn start",
+    "deploy": "gh-pages -d build",
     "start": "nodemon src/index.js"
   },
   "repository": "git@github.com:oleksiikoko/CV-Api.git",
@@ -12,6 +15,7 @@
     "babel-polyfill": "^6.26.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "gh-pages": "^3.1.0",
     "gif-me-duration": "^1.0.8",
     "mongoose": "^5.9.20",
     "mongoose-auto-increment": "^5.0.1",
