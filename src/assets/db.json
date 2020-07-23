@@ -2,7 +2,7 @@
   "portfolio": [
     {
       "projectName": "CV",
-      "description": "<p>Adapted for viewing on: </p><ul><li>a mobile</li><li>tablet</li><li>desktop</li></ul><p>devices.</p><p>The components are tested by PropTypes and are also covered by tests.</p>",
+      "description": "<p>Adapted for viewing on: </p><ul><li>a mobile</li><li>tablet</li><li>desktop</li></ul><p>The components are tested by PropTypes and are also covered by tests.</p>",
       "links": [
         {
           "iconId": "figma",
@@ -20,7 +20,7 @@
     },
     {
       "projectName": "Joke generator",
-      "description": "<p>Service for finding jokes.</p><p>Adapted for viewing on: </p><ul><li>a mobile</li><li>tablet</li><li>desktop</li></ul><p>devices.</p><p>Vanilla.js was taken as the main technologist to gain base experience and a better understanding of Js.</p>",
+      "description": "<p>Service for finding jokes.</p><p>Adapted for viewing on: </p><ul><li>a mobile</li><li>tablet</li><li>desktop</li></ul><p>Vanilla.js was taken as the main technologist to gain base experience and a better understanding of Js.</p>",
       "gif": {
         "path": "src/assets/PortfolioGifPreview/JokeGeneratorPreview.gif",
         "duration": 12000,
@@ -98,7 +98,7 @@
     },
     {
       "projectName": "TicTacToe",
-      "description": "<p>A game of tic-tac-toe where the opponent can be both a living person and a bot. This is my first author's project whose task was to apply the acquired skills in React / Redux / Node.js. Issues: <ul> <li> No adaptive layout </li> <li> Difficult to understand code </li> <li> Intricate logic </li> <ul></p>",
+      "description": "<p>A game of tic-tac-toe where the opponent can be both a living person and a bot. This is my first author's project whose task was to apply the acquired skills in React / Redux / Node.js. <p>Issues</p>: <ul> <li> No adaptive layout </li> <li> Difficult to understand code </li> <li> Intricate logic </li> <ul></p>",
       "gif": {
         "path": "src/assets/PortfolioGifPreview/TicTacToePreview.gif",
         "duration": 10000,
