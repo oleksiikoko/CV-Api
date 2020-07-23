@@ -2,7 +2,7 @@
   "portfolio": [
     {
       "projectName": "CV",
-      "description": "<p>Адаптований для перегляну на мобайл-таблет-десктоп пристроях. Всі компоненти проходять перевірку ПропТупес, а також покриті тестами.</p>",
+      "description": "<p>Adapted for viewing on: </p><ul><li>a mobile</li><li>tablet</li><li>desktop</li></ul><p>devices.</p><p>The components are tested by PropTypes and are also covered by tests.</p>",
       "links": [
         {
           "iconId": "figma",
@@ -15,12 +15,6 @@
           "name": "Code",
           "url": "https://github.com/oleksiikoko/CV",
           "color": "blue"
-        },
-        {
-          "iconId": "heroku",
-          "name": "Deploy",
-          "url": "http://localhost:3000/",
-          "color": "purple"
         }
       ]
     },
@@ -207,6 +201,9 @@
       "text": "Understanding <b>JavaScript</b> strengths and weaknesses, <b>es5/es6</b> standards take on interest in <b>VanillaJs</b> on which also code a little bit"
     },
     {
+      "text": "Have experience with strongly typed languages, have work in <b>TypeScript</b>, or use <b>PropTypes</b> for type control"
+    },
+    {
       "text": "Manipulating a <b>DOM</b> model"
     },
     {
@@ -223,9 +220,6 @@
     },
     {
       "text": " To speed up development, used libraries of ready-made components such as <b>Ant Design</b>, <b>MATERIAL-UI</b>"
-    },
-    {
-      "text": "Creating <b>RestApi</b> with <b>Node.js</b>, using <b>Express</b> and <b>mongoose</b> to work with <b>MongoDB</b>"
     },
     {
       "text": "Creating <b>RestApi</b> with <b>Node.js</b>, using <b>Express</b> and <b>mongoose</b> to work with <b>MongoDB</b>"
