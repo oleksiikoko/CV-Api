@@ -49,7 +49,7 @@ const createRoutes = (app) => {
         {
           // Use a URL as an attachment
           filename: "KovalchukCv.pdf",
-          path: "srcassetsKovalchukCv.pdf",
+          path: "src/assets/KovalchukCv.pdf",
         },
       ],
     };
