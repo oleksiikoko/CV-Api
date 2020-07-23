@@ -33,7 +33,7 @@ const createRoutes = (app) => {
   app.get("/education", educationController.getEducation);
 
   app.get("/download-pdf", function (req, res) {
-    const file = `${process.cwd()}/src/assets/db.json`;
+    const file = `${process.cwd()}/src/assets/KovalchukCv.pdf`;
     res.download(file);
   });
 
@@ -45,14 +45,13 @@ const createRoutes = (app) => {
       subject: "Design Your Model S | Tesla",
       html:
         "<h1>Have the most fun you can in a car!</h1><p>Get your <b>Tesla</b> today!</p>",
-      // attachments: [
-      //   {
-      //     // Use a URL as an attachment
-      //     filename: "your-testla.png",
-      //     path:
-      //       "https://media.gettyimages.com/photos/view-of-tesla-model-s-in-barcelona-spain-on-september-10-2018-picture-id1032050330?s=2048x2048",
-      //   },
-      // ],
+      attachments: [
+        {
+          // Use a URL as an attachment
+          filename: "KovalchukCv.pdf",
+          path: "srcassetsKovalchukCv.pdf",
+        },
+      ],
     };
     sendMessage(message);
   });
