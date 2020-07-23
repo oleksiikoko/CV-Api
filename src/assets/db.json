@@ -134,7 +134,7 @@
     }
   ],
   "about": {
-    "text": "<p> Mostly, I'm looking for a company that appreciates and strongly concentrate freethinkers in addition to courageous people, as well as the promotion of diverse development of workers specifically on the position of \"Front-end developer\" I want to be engaged in the vast majority of the development of \"logic\" on Js/React, markup(HTML, CSS) does not frighten me, assuming that it will occupy no more than 40% of tasks related.</p>"
+    "text": "<p>I have been studying frontend for about 8 months. During this time, I realized that I could take the stack in this direction. I mean, I like doing it anyway. I am looking for an interesting project under the leadership of a company that is growing together with his employees.</p>"
   },
   "contacts": [
     {
@@ -204,31 +204,52 @@
   ],
   "skills": [
     {
-      "text": "Understanding JavaScript strengths and weaknesses, <b>es5</b> and <b>es6</b> Standards"
+      "text": "Understanding <b>JavaScript</b> strengths and weaknesses, <b>es5/es6</b> standards take on interest in <b>VanillaJs</b> on which also code a little bit"
     },
     {
-      "text": "Manipulating a DOM model"
+      "text": "Manipulating a <b>DOM</b> model"
     },
     {
-      "text": "Markup of adaptive, flexbox HTML pages using SCSS preprocessor following the BEM methodology"
+      "text": "Markup of adaptive, flexbox <b>HTML</b> pages using <b>SCSS</b> preprocessor"
     },
     {
-      "text": "SPA application development using the React and React-router framework, implementation of the Redux state management tool"
+      "text": "Familiar with the <b>BEM</b> methodology"
     },
     {
-      "text": "Creating RestApi with Node.js, using Express and mongoose to work with MongoDB"
+      "text": "<b>SPA</b> application development using the <b>React</b> and <b>React-router</b> framework"
     },
     {
-      "text": "Writing clean, reusable, mutable code using OOP/OOD principles"
+      "text": "Implementation of the <b>Redux</b> state management tool, for easier work with side effects used <b>Redux-Thunk</b>, <b>Redux-Saga</b>"
     },
     {
-      "text": "Networking protocols: TCP/IP, HTTP"
+      "text": " To speed up development, used libraries of ready-made components such as <b>Ant Design</b>, <b>MATERIAL-UI</b>"
     },
     {
-      "text": "Linux"
+      "text": "Creating <b>RestApi</b> with <b>Node.js</b>, using <b>Express</b> and <b>mongoose</b> to work with <b>MongoDB</b>"
     },
     {
-      "text": "Git"
+      "text": "Creating <b>RestApi</b> with <b>Node.js</b>, using <b>Express</b> and <b>mongoose</b> to work with <b>MongoDB</b>"
+    },
+    {
+      "text": "Have experienve with writing tests by <b>Jest&Testing-Library</b>"
+    },
+    {
+      "text": "Writing <b>clean</b>, <b>reusable</b>, <b>mutable</b> code using <b>OOP/OOD</b> principles"
+    },
+    {
+      "text": "Build projects with <b>WebPack</b>"
+    },
+    {
+      "text": "Networking protocols: <b>TCP/IP</b>, <b>HTTP</b>"
+    },
+    {
+      "text": "All my design, as well as this cv, is made in <b>Figma</b>"
+    },
+    {
+      "text": "<b>Linux</b>"
+    },
+    {
+      "text": "<b>Git</b>"
     }
   ],
   "education": [
