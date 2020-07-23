@@ -42,9 +42,8 @@ const createRoutes = (app) => {
     const message = {
       from: "olkov-ipt21@lll.kpi.ua",
       to: req.body.recipient,
-      subject: "Design Your Model S | Tesla",
-      html:
-        "<h1>Have the most fun you can in a car!</h1><p>Get your <b>Tesla</b> today!</p>",
+      subject: "Oleksii Kovalchuk Frontend",
+      html: "<p>Hi, you can find my cv in attachments</p>",
       attachments: [
         {
           // Use a URL as an attachment
